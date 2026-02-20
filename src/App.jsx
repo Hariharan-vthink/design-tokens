@@ -103,6 +103,7 @@ Return ONLY a valid JSON object with exactly these fields (no markdown, no expla
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ base64Data, mediaType }),
   });
+  console.log("API called...!");
 
   if (!response.ok) throw new Error("API error");
   const data = await response.json();
