@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from "react";
+import { Analytics } from "@vercel/analytics/react";
 
 // ─── Helpers ─────────────────────────────────────────────────────────────────
 function hexToRgb(hex) {
@@ -821,6 +822,7 @@ export default function App() {
         ::-webkit-scrollbar-track{background:#F0EDFF}
         ::-webkit-scrollbar-thumb{background:#C4B8FF;border-radius:3px}
       `}</style>
+      <Analytics />
     </div>
   );
 }
